@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Assignmemnt 1</title>
+    <h2>Table Operation</h2>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div>
+                        <label for="country">Country</label>
+                        <input type="text" name="country" id="country">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Insert at end">
+                        <input type="button" onClick="onEdit(this)" value="Insert at beginning">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Sl no</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>City</th>
+                                <th>Country</th>
+                            </tr>
+                           <!-- 5 records inserted -->
+                            <tr>
+                                <td id="moveNxt">1</td>
+                                <td>Lewis</td>
+                                <td>Hamilton</td>
+                                <td>Bristol</td>
+                                <td>England</td>
+                            </tr>
+                            <tr>
+                                <td >2</td>
+                                <td>Ansh</td>
+                                <td>Jain</td>
+                                <td>Ghaziabad</td>
+                                <td>India</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Mike</td>
+                                <td>Junior</td>
+                                <td>New Jersey</td>
+                                <td>USA</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Robin</td>
+                                <td>kool</td>
+                                <td>Talinn</td>
+                                <td>Estonia</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Daljit</td>
+                                <td>Singh</td>
+                                <td>Toranto</td>
+                                <td>Canada</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
+
+
+
